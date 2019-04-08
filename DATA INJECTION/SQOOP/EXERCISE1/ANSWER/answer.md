@@ -267,4 +267,7 @@ Note: Recompile with -Xlint:deprecation for details.
 19/04/07 23:23:11 INFO mapreduce.ImportJobBase: Retrieved 92416 records.
 
 
+
 3) 캡쳐 - 첨부 추가(1-3)
+4) tojson 실행문(정상실행완료)
+training@localhost ~]$ avro-tools tojson hdfs://localhost/loudacre/accounts/CA/part-m-00000.avro
