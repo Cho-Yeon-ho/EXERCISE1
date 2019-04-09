@@ -45,4 +45,5 @@ test weblog entry 1
 test weblog entry 1
 
 4) test weblog entry 2 입력 시  Consumer  터미널에도 test weblog entry 2가 시현됨
+4) test weblog entry 2 입력 시  Consumer  터미널에도 test weblog entry 2가 시현됨(그림파일 참조)
 5) Clean up(Ctrl C입력하여 Cleansing)
