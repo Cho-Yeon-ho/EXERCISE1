@@ -1,6 +1,33 @@
 SQOOP EXERCISE
 EXERCISE1-1
 
+0)필드찾기(실행문)
+[training@localhost ~]$ sqoop eval \
+> --connect jdbc:mysql://localhost/loudacre \
+> --username training --password training \
+> --query "describe accounts"
+(결과)
+19/04/08 18:26:03 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.7.0
+19/04/08 18:26:03 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using -P instead.
+19/04/08 18:26:03 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+---------------------------------------------------------------------------------------------------------
+| Field                | Type                 | Null | Key | Default              | Extra                |
+---------------------------------------------------------------------------------------------------------
+| acct_num             | int(11)              | NO  | PRI | (null)               |                      |
+| acct_create_dt       | datetime             | NO  |     | (null)               |                      |
+| acct_close_dt        | datetime             | YES |     | (null)               |                      |
+| first_name           | varchar(255)         | NO  |     | (null)               |                      |
+| last_name            | varchar(255)         | NO  |     | (null)               |                      |
+| address              | varchar(255)         | NO  |     | (null)               |                      |
+| city                 | varchar(255)         | NO  |     | (null)               |                      |
+| state                | varchar(255)         | NO  |     | (null)               |                      |
+| zipcode              | varchar(255)         | NO  |     | (null)               |                      |
+| phone_number         | varchar(255)         | NO  |     | (null)               |                      |
+| created              | datetime             | NO  |     | (null)               |                      |
+| modified             | datetime             | NO  |     | (null)               |                      |
+---------------------------------------------------------------------------------------------------------
+
+
 1)실행문
  --connect jdbc:mysql://localhost/loudacre \
 > --username training --password training \
