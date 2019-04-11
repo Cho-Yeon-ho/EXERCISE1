@@ -1,11 +1,12 @@
 1.   1)쿼리
-select name from products c join (select b.prod_id, count(*) as cc from order_details a join products b on a.prod_id = b.prod_id group by b.prod_id order by cc desc limit 3) d
- on c.prod_id = d.prod_id;
+select name, cc from products c join (select b.prod_id, count(*) as cc from order_details a join products b on a.prod_id = b.prod_id group by b.prod_id order by cc desc limit 3) d
+ on c.prod_id = d.prod_id order by cc desc;
     2) 결과
 
-     Tablet PC (10 in. display, 64 GB)
-2	8GB DDR3-1600 (PC3-12800) Dual Channel Desktop Memory Kit (2x4GB)
-3	F Jack Male-to-Male Cable (12 in.)
+     	name	cc
+    1	Tablet PC (10 in. display, 64 GB)	119801
+    2	8GB DDR3-1600 (PC3-12800) Dual Channel Desktop Memory Kit (2x4GB)	29053
+    3	F Jack Male-to-Male Cable (12 in.)	14566
 
 2.
 1) 쿼리
