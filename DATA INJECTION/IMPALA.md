@@ -38,6 +38,8 @@ WHERE d.prod_id=1274348
 +----------+---------+-------+---------------------+
 Fetched 2 row(s) in 9.71s
 
+yes!!!!!!
+
 19.
 2019-04-10 21:46:07,601 WARN  [main] mapreduce.TableMapReduceUtil: The hbase-prefix-tree module jar containing PrefixTreeCodec is not present.  Continuing without it.
 scan complete in 5ms
